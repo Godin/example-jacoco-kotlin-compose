@@ -23,6 +23,7 @@ repositories {
 
 dependencies {
     implementation(compose.desktop.currentOs)
+    implementation("org.jetbrains.compose.ui:ui-tooling-preview:1.6.10")
     testImplementation(compose.desktop.uiTestJUnit4)
     testImplementation(libs.junit.api)
     testRuntimeOnly(libs.junit.engine)
