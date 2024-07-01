@@ -9,6 +9,18 @@ jacoco {
     toolVersion = "[0.8.13-SNAPSHOT,)"
 }
 
+tasks.jacocoTestCoverageVerification {
+    violationRules {
+        rule {
+            limit {
+                counter = "INSTRUCTION"
+                value = "MISSEDCOUNT"
+                maximum = "0".toBigDecimal()
+            }
+        }
+    }
+}
+
 repositories {
     maven {
         url = uri("https://oss.sonatype.org/content/repositories/snapshots")
