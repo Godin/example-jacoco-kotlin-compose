@@ -32,3 +32,7 @@ composeCompiler {
     includeTraceMarkers = true
     includeSourceInformation = true
 }
+
+compose.desktop.application {
+    mainClass = "org.example.MainKt"
+}
