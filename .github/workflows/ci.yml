@@ -14,7 +14,7 @@ jobs:
       - uses: gradle/actions/setup-gradle@d156388eb19639ec20ade50009f3d199ce1e2808 # v4.1.0
         with:
           validate-wrappers: true
-      - run: ./gradlew test jacocoTestReport
+      - run: ./gradlew test jacocoTestReport jacocoTestCoverageVerification
       - uses: actions/upload-artifact@b4b15b8c7c6ac21ea08fcf65892d2ee8f75cf882 # v4.4.3
         with:
           name: jacoco-report
