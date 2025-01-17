@@ -22,4 +22,11 @@ class ExampleTest {
         compose.onNodeWithText("Click me again").assertDoesNotExist()
     }
 
+    @Test
+    fun test_default_arguments() {
+        compose.setContent {
+            default_arguments()
+        }
+    }
+
 }
