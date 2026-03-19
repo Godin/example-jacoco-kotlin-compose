@@ -21,6 +21,10 @@ repositories {
     mavenCentral()
 }
 
+tasks.test {
+    systemProperty("java.awt.headless", "true")
+}
+
 dependencies {
     implementation(compose.desktop.currentOs)
     testImplementation(libs.compose.ui.test.junit4)
